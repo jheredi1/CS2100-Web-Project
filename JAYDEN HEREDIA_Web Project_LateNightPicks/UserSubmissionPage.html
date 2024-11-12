@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Submissions</title>
+    <link rel="stylesheet" href="LateNightPicks.css">
+</head>
+<body>
+    <header> <!-- Header links -->
+        <h1 class="left"><a href="TopVideosPage.html">Videos</a></h1>
+        <h1 class="middle"><a href="TopArtistsPage.html">Artists</a></h1>
+        <h1 class="right"><a href="TopMusicPage.html">Music</a></h1>
+		<h1 class="right"><a href="ProductPage.html">Shop</a></h1>
+    </header>
+
+    <h2>Submit User Content</h2>
+
+    <main>
+        <!-- Form starts here -->
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="submission-type">Submission Type:</label>
+            <select id="submission-type" name="submission-type" required>
+                <option value="video">Video</option>
+                <option value="artist">Artist</option>
+                <option value="music">Music</option>
+            </select>
+
+            <label for="link">Link to Content:</label>
+            <input type="url" id="link" name="link" placeholder="https://example.com" required>
+
+            <label for="details">Additional Details:</label>
+            <textarea id="details" name="details" rows="4" placeholder="Describe the content..." required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        <!-- Form ends here -->
+    </main>
+
+    <footer>
+        <p>© 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>
