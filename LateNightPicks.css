@@ -11,7 +11,7 @@ body, html {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #1a1a1a; /* Dark background */
-    color: #e0e0e0; /* Light grey text for readability */
+    color: #e0e0e0; /* Light grey text*/
     display: flex;
     flex-direction: column;
 }
