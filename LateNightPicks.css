@@ -402,5 +402,42 @@ input[type="submit"]:hover {
 img.pulsate {
     animation: pulsate 2s infinite;
 }
+/*AOTM CSS*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+.left-section {
+    flex: 1;
+}
 
+.right-section {
+    flex: 1;
+    max-width: 400px;
+}
 
+.audio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.audio-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+audio {
+    flex: 1;
+}
+
+.right-section h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #00FF00; /* Neon green for styling */
+}
