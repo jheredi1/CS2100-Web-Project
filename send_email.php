@@ -6,12 +6,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Email details
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "JayHeredia2005@gmail.com"; 
     $subject = "New Form Submission";
-    $body = "You have received a new form submission:\n\n" .
-            "Name: $name\n" .
-            "Email: $email\n" .
-            "Message: $message\n";
+    $body = "You have received a new form submission:\
+\
+" .
+            "Name: $name\
+" .
+            "Email: $email\
+" .
+            "Message: $message\
+";
 
     $headers = "From: $email";
 
