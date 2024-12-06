@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Countdown</title>
+    <link rel="stylesheet" href="LateNightPicks.css">
+</head>
+<body>
+    <header>
+        <h1 class="left"><a href="TopVideosPage.html">Videos</a></h1>
+        <h1 class="middle"><a href="TopArtistsPage.html">Artists</a></h1>
+        <h1 class="right"><a href="TopMusicPage.html">Music</a></h1>
+		<h1 class="right"><a href="ProductPage.html">Shop</a></h1>
+		<img src='LOGO/LNP (2).png' alt='Logo' class = 'pulsate' style='position: absolute; top: -15px; left: 0; width: 100px; height: auto;'>
+    </header>
+    <main>
+        <div id="countdowns">
+            <div class="countdown" id="coachella">
+                <h2>Coachella</h2>
+                <div class="timer" id="timer-coachella"></div>
+            </div>
+            <div class="countdown" id="edc">
+                <h2>EDC</h2>
+                <div class="timer" id="timer-edc"></div>
+            </div>
+            <div class="countdown" id="beyond-chicago">
+                <h2>Beyond Chicago</h2>
+                <div class="timer" id="timer-beyond-chicago"></div>
+            </div>
+            <div class="countdown" id="electric-forest">
+                <h2>Electric Forest</h2>
+                <div class="timer" id="timer-electric-forest"></div>
+            </div>
+            <div class="countdown" id="shambhala">
+                <h2>Shambhala</h2>
+                <div class="timer" id="timer-shambhala"></div>
+            </div>
+            <div class="countdown" id="arc-chicago">
+                <h2>Arc Chicago</h2>
+                <div class="timer" id="timer-arc-chicago"></div>
+            </div>
+            <div class="countdown" id="lost-lands">
+                <h2>Lost Lands</h2>
+                <div class="timer" id="timer-lost-lands"></div>
+            </div>
+        </div>
+    </main>
+	    <footer>
+        <p>© 2024 All rights reserved.</p>
+    </footer>
+    <script>
+        const festivals = [
+            { id: 'coachella', date: new Date('April 11, 2025 00:00:00') },
+            { id: 'edc', date: new Date('May 16, 2025 00:00:00') },
+            { id: 'beyond-chicago', date: new Date('June 7, 2025 00:00:00') },
+            { id: 'electric-forest', date: new Date('June 19, 2025 00:00:00') },
+            { id: 'shambhala', date: new Date('July 25, 2025 00:00:00') },
+            { id: 'arc-chicago', date: new Date('August 29, 2025 00:00:00') },
+            { id: 'lost-lands', date: new Date('September 20, 2025 00:00:00') }
+        ];
+
+        function updateCountdowns() {
+            const now = new Date();
+            festivals.forEach(festival => {
+                const timerElement = document.getElementById(`timer-${festival.id}`);
+                const timeDifference = festival.date - now;
+
+                if (timeDifference > 0) {
+                    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                    timerElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                } else {
+                    timerElement.textContent = 'The festival has started!';
+                }
+            });
+        }
+
+        setInterval(updateCountdowns, 1000);
+    </script>
+</body>
+</html>
