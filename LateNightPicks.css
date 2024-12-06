@@ -406,7 +406,7 @@ img.pulsate {
 .flex-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    /*align-items: flex-start; /* Align items to the top */
     height: 100%;
 }
 
@@ -449,5 +449,5 @@ img.pulsate {
 }
 
 .audio-player {
-    width: 20%;
+    width: 20% !important;
 }
