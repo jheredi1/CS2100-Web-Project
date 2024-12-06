@@ -403,4 +403,35 @@ img.pulsate {
     animation: pulsate 2s infinite;
 }
 /*AOTM CSS*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
 
+.left-section {
+    width: 50%;
+    text-align: center;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.artist-image {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.artist-description {
+    font-size: 14px;
+    color: gray;
+}
+
+.audio-player {
+    width: 30%;
+}
