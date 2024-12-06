@@ -1,3 +1,3 @@
 # CS2100-Web-Project
 This repository is for my CS2100 Web Project (Late Night Picks)
-"Late Night Picks" is my web project aiming to connect resources such as music, videos, and artists all in one place.
+"Late Night Picks" is my web project designed for EDM musicians and enthusiasts, bringing together resources like music, videos, and artists in one convenient platform.
