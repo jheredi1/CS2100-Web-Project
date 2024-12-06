@@ -403,20 +403,7 @@ img.pulsate {
     animation: pulsate 2s infinite;
 }
 /*AOTM CSS*/
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 20px;
-}
-.left-section {
-    flex: 1;
-}
 
-.right-section {
-    flex: 1;
-    max-width: 400px;
-}
 
 .audio-item {
     display: flex;
