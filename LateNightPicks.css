@@ -387,6 +387,20 @@ input[type="submit"]:hover {
     text-decoration: underline;
 }
 
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
+img.pulsate {
+    animation: pulsate 2s infinite;
+}
 
 
