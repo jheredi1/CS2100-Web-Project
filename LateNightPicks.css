@@ -406,7 +406,7 @@ img.pulsate {
 .flex-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     height: 100%;
 }
 
@@ -419,8 +419,8 @@ img.pulsate {
     width: 50%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 0px
+    align-items: flex-start;
+    padding-top: 100px; /* Use padding to move audio players down */
 }
 
 .audio-container {
@@ -436,8 +436,8 @@ img.pulsate {
 .audio-text {
     font-size: 14px;
     color: gray;
-    margin: 5
-
+    margin: 5px 0;
+}
 .artist-image {
     width: 80%;
     border-radius: 10px;
@@ -449,5 +449,5 @@ img.pulsate {
 }
 
 .audio-player {
-    width: 30%
+    width: 100%;
 }
