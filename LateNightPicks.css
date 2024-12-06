@@ -357,7 +357,7 @@ input[type="submit"]:hover {
 }
 /* Artist of the month style*/
 .AOTM-window {
-    background-color: #222;
+    background: url('GIFS/200w.gif') no-repeat center center/cover;
     border-radius: 8px;
     padding: 20px;
     margin: 20px auto;
@@ -386,5 +386,7 @@ input[type="submit"]:hover {
 .AOTM-window a:hover {
     text-decoration: underline;
 }
+
+
 
 
