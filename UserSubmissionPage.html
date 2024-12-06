@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Share your talent at LateNightPicks! Submit videos or music to showcase your creativity to a wider audience." />
-        <meta name="keywords" content="trending, videos, music, artists, top content" />
-        <meta name="author" content="Jayden Heredia" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Share your talent at LateNightPicks! Submit videos or music to showcase your creativity to a wider audience.">
+        <meta name="keywords" content="trending, videos, music, artists, top content">
+        <meta name="author" content="Jayden Heredia">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Submissions</title>
-        <link rel="stylesheet" href="LateNightPicks.css" />
+        <link rel="stylesheet" href="LateNightPicks.css">
     </head>
     <body>
         <header>
@@ -18,19 +18,19 @@
             <h1 class="right"><a href="TopMusicPage.html">Music</a></h1>
             <h1 class="right"><a href="ProductPage.html">Shop</a></h1>
             <h1 class="right"><a href="TheFinalCountdown.html">TFC</a></h1>
-            <img src="LOGO/LNP (2).png" alt="Logo" class="pulsate" style="position: absolute; top: -15px; left: 0; width: 100px; height: auto;" />
+            <img src="LOGO/LNP (2).png" alt="Logo" class="pulsate" style="position: absolute; top: -15px; left: 0; width: 100px; height: auto;">
         </header>
 
         <h2>Submit User Content</h2>
 
         <main>
             <!-- Form starts here -->
-            <form method="post" action="send_email.php">
+            <form id="contact-form" onsubmit="sendEmail(event)">
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" required>
 
                 <label for="submission-type">Submission Type:</label>
                 <select id="submission-type" name="submission-type" required>
@@ -40,19 +40,39 @@
                 </select>
 
                 <label for="link">Link to Content:</label>
-                <input type="url" id="link" name="link" placeholder="https://example.com" required />
+                <input type="url" id="link" name="link" placeholder="https://example.com" required>
 
                 <label for="details">Additional Details:</label>
                 <textarea id="details" name="details" rows="4" placeholder="Describe the content..." required></textarea>
 
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit">
             </form>
-            <!-- Form ends here -->
+
         </main>
 
         <footer>
             <p>For any questions or concerns, contact: Jayheredia2005@gmail.com </p>
             <p>© 2024 LateNightPicks. All rights reserved.</p>
         </footer>
+
+  
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            (function() {
+                emailjs.init("wJgR2lY7VTTGm0g7Y"); 
+            })();
+
+            function sendEmail(event) {
+                event.preventDefault(); 
+
+                // Send the form data using EmailJS
+                emailjs.sendForm('service_4j7cfzf', 'template_hh7qh7g', '#contact-form')
+                    .then(function(response) {
+                        alert('Email sent successfully!');
+                    }, function(error) {
+                        alert('Failed to send email: ' + error.text);
+                    });
+            }
+        </script>
     </body>
 </html>
