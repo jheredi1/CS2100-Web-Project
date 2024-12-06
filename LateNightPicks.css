@@ -356,4 +356,48 @@ input[type="submit"]:hover {
     margin-bottom: 40px;
 }
 
+/* Artist of the Month Box Styling */
+.aotm-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.aotm-box {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 12px;
+    border: 3px solid #ff1493; /* Different border color to stand out */
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.aotm-title {
+    font-size: 2rem;
+    color: #ff1493;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.aotm-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff1493;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.aotm-button:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.5);
+}
+
+
 
