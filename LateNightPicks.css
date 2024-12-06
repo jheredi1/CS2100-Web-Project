@@ -284,78 +284,6 @@ input[type="submit"]:hover {
     color: #00e600; /* Brighter neon green on hover */
     text-decoration: underline;
 }
-
-/* Media Boxes Layout */
-.media-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-/* Countdown Box Styling */
-.countdown-box {
-    background-color: #333; /* Dark background for the box */
-    padding: 20px;
-    border-radius: 8px;
-    border: 2px solid #39ff14; /* Neon green border */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    max-width: 400px;
-    width: 100%; /* Full width within its container */
-    order: 2; /* Move countdown to the center */
-}
-
-.countdown-box h3 {
-    font-size: 1.5rem;
-    color: #39ff14; /* Neon green heading */
-    margin-bottom: 10px;
-}
-
-.countdown-box p {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-}
-
-#countdown {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #ff6347; 
-}
-
-/* Video Box Styling */
-.video-box {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    border: 2px solid #39ff14;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-}
-
-.video-box h3 {
-    font-size: 1.5rem;
-    color: #39ff14;
-    margin-bottom: 10px;
-}
-
-.video-box p {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-}
-/* Gallery Layout for Embedded Videos */
-.video-gallery {
-    display: flex;
-    flex-wrap: nowrap; 
-    gap: 20px; 
-    justify-content: flex-start; 
-    overflow-x: auto; 
-    padding: 20px;
-    margin-bottom: 40px;
-}
-
 /* Artist of the Month Box Styling */
 .aotm-container {
     display: flex;
@@ -399,5 +327,42 @@ input[type="submit"]:hover {
     box-shadow: 0 4px 15px rgba(255, 20, 147, 0.5);
 }
 
+/* Media Boxes Layout */
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Countdown Box Styling */
+.countdown-box {
+    background-color: #333; /* Dark background for the box */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #39ff14; /* Neon green border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%; /* Full width within its container */
+    order: 2; /* Move countdown to the center */
+}
+
+.countdown-box h3 {
+    font-size: 1.5rem;
+    color: #39ff14; /* Neon green heading */
+    margin-bottom: 10px;
+}
+
+.countdown-box p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+#countdown {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ff6347; 
+}
 
 
