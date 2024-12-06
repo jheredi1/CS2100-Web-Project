@@ -423,6 +423,23 @@ img.pulsate {
     padding-top: 500px;
 }
 
+.audio-container {
+    text-align: center;
+    width: 30%;
+}
+
+.audio-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.audio-text {
+    font-size: 14px;
+    color: gray;
+    margin: 5
+
+
+
 .artist-image {
     width: 80%;
     border-radius: 10px;
