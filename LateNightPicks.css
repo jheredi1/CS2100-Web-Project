@@ -387,7 +387,7 @@ input[type="submit"]:hover {
     text-decoration: underline;
 }
 
-@keyframes push {
+@keyframes pulsate {
     0% {
         transform: scale(1);
     }
@@ -399,7 +399,7 @@ input[type="submit"]:hover {
     }
 }
 
-img.push {
+img.pulsate {
     animation: pulsate 2s infinite;
 }
 
