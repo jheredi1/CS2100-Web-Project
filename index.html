@@ -1,86 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Welcome to the page LateNightPicks! We offer a wide variety of multimedia focused on the EDM genre. Anything from videos, downloadable tracks, news, and many more are offered here." />
+        <meta name="keywords" content="trending, videos, music, artists, top content" />
+        <meta name="author" content="Jayden Heredia" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>HomePage</title>
+        <link rel="stylesheet" href="LateNightPicks.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the page LateNightPicks! We offer a wide variety of multimedia focused on the EDM genre. Anything from videos, downloadable tracks, news, and many more are offered here.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HomePage</title>
-    <link rel="stylesheet" href="LateNightPicks.css">
-</head>
+    <body>
+        <header>
+            <!-- Header links -->
+            <h1 class="left"><a href="TopVideosPage.html">Videos</a></h1>
+            <h1 class="middle"><a href="TopArtistsPage.html">Artists</a></h1>
+            <h1 class="right"><a href="TopMusicPage.html">Music</a></h1>
+            <h1 class="right"><a href="ProductPage.html">Shop</a></h1>
+            <h1 class="right"><a href="TheFinalCountdown.html">TFC</a></h1>
+            <img src="LOGO/LNP (2).png" alt="Logo" class="pulsate" style="position: absolute; top: -15px; left: 0; width: 100px; height: auto;" />
+        </header>
 
-<body>
-    <header> <!-- Header links -->
-        <h1 class="left"><a href="TopVideosPage.html">Videos</a></h1>
-        <h1 class="middle"><a href="TopArtistsPage.html">Artists</a></h1>
-        <h1 class="right"><a href="TopMusicPage.html">Music</a></h1>
-	<h1 class="right"><a href="ProductPage.html">Shop</a></h1>
-	<img src='LOGO/LNP (2).png' alt='Logo' class = 'pulsate' style='position: absolute; top: -15px; left: 0; width: 100px; height: auto;'>
-    </header>
+        <main>
+            <!-- Artist Of The Month(AOTM) window w/ hyperlink -->
+            <div class="AOTM-window">
+                <h3>Artist of the Month</h3>
+                <p>Discover the featured artist of this month and their latest tracks!</p>
+                <a href="ArtistOfTheMonth.html">Learn More</a>
+            </div>
+            <!-- Countdown and Media Boxes Layout -->
+            <div class="media-container">
+                <!-- Video Boxes -->
+                <div class="video-box">
+                    <h3>2Hearts</h3>
+                    <p>Check out the music video for SPEAK up! from "2Hearts".</p>
+                    <video width="100%" controls>
+                        <source src="HOMEPAGE VIDEOS/Knock2 - SPEAK up!.mp4" type="video/mp4" />
+                    </video>
+                    <a href="https://www.youtube.com/watch?v=F1LkNhNU6kQ" target="_blank">Watch on YouTube</a>
+                </div>
 
+                <!-- Countdown Box -->
+                <div class="countdown-box">
+                    <h3>Countdown to "No Limit" Album Release</h3>
+                    <p>The highly anticipated album <strong>No Limit</strong> is dropping soon! Get ready!</p>
+                    <p id="countdown"></p>
 
-    <main>
-	    <div class="AOTM-window">
-    <h3>Artist of the Month</h3>
-    <p>Discover the featured artist of this month and their latest tracks!</p>
-    <a href="ArtistOfTheMonth.html">Learn More</a>
-</div>
-        <!-- Countdown and Media Boxes Layout -->
-        <div class="media-container">
+                    <!-- Collapsible Details Widget -->
+                    <details class="countdown-details">
+                        <summary>Learn more about the album</summary>
+                        <p>The album "No Limit" is the debut album of rising EDM star Knock2</p>
+                        <p>Release Date: December 15, 2024</p>
+                    </details>
+                </div>
 
-            <!-- Video Boxes -->
-            <div class="video-box">
-                <h3>2Hearts</h3>
-                <p>Check out the music video for SPEAK up! from "2Hearts".</p>
-                <video width="100%" controls>
-                    <source src="HOMEPAGE VIDEOS/Knock2 - SPEAK up!.mp4" type="video/mp4">
-                </video>
-                <a href="https://www.youtube.com/watch?v=F1LkNhNU6kQ" target="_blank">Watch on YouTube</a>
+                <!-- Video Box -->
+                <div class="video-box">
+                    <h3>Room 202</h3>
+                    <p>Watch the official video for Make U SWEAT! from "Room 202".</p>
+                    <video width="100%" controls>
+                        <source src="HOMEPAGE VIDEOS/Knock2 - Make U SWEAT!.mp4" type="video/mp4" />
+                    </video>
+                    <a href="https://www.youtube.com/watch?v=x4eAAMZZsc0" target="_blank">Watch on YouTube</a>
+                </div>
             </div>
 
-            <!-- Countdown Box -->
-            <div class="countdown-box">
-                <h3>Countdown to "No Limit" Album Release</h3>
-                <p>The highly anticipated album <strong>No Limit</strong> is dropping soon! Get ready!</p>
-                <p id="countdown"></p>
-
-                <!-- Collapsible Details Widget -->
-                <details class="countdown-details">
-                    <summary>Learn more about the album</summary>
-                    <p>The album "No Limit" is the debut album of rising EDM star Knock2</p>
-                    <p>Release Date: November 9, 2024</p>
-                </details>
+            <!-- Existing Content -->
+            <div class="centered-window">
+                <h3>Submit Your Content!</h3>
+                <p>We are always welcome to feature new trending videos, artists, and music. Click below to submit your content:</p>
+                <a href="UserSubmissionPage.html" class="submit-link">Go to Submission Page</a>
             </div>
+        </main>
 
-            <!-- Video Box -->
-            <div class="video-box">
-                <h3>Room 202</h3>
-                <p>Watch the official video for Make U SWEAT! from "Room 202".</p>
-                <video width="100%" controls>
-                    <source src="HOMEPAGE VIDEOS/Knock2 - Make U SWEAT!.mp4" type="video/mp4">
-                </video>
-                <a href="https://www.youtube.com/watch?v=x4eAAMZZsc0" target="_blank">Watch on YouTube</a>
-            </div>
-
-        </div>
-
-        <!-- Existing Content -->
-        <div class="centered-window">
-            <h3>Submit Your Content!</h3>
-            <p>We are always welcome to feature new trending videos, artists, and music. Click below to submit your content:</p>
-            <a href="UserSubmissionPage.html" class="submit-link">Go to Submission Page</a>
-        </div>
-
-    </main>
-
-    <footer>
-        <p>© 2024 All rights reserved.</p>
-    </footer>
-
+        <footer>
+            <p>For any questions or concerns, contact: Jayheredia2005@gmail.com </p>
+            <p>© 2024 LateNightPicks. All rights reserved.</p>
+        </footer>
     <!-- Countdown Script -->
     <script>
-        var countDownDate = new Date("Nov 9, 2024 00:00:00").getTime();
+        var countDownDate = new Date("Dec 15, 2024 00:00:00").getTime();
 
         var x = setInterval(function () {
             var now = new Date().getTime();
@@ -101,5 +102,4 @@
         }, 1000);
     </script>
 </body>
-
 </html>

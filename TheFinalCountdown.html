@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival Countdown</title>
-    <link rel="stylesheet" href="LateNightPicks.css">
-</head>
-<body>
-    <header>
-        <h1 class="left"><a href="TopVideosPage.html">Videos</a></h1>
-        <h1 class="middle"><a href="TopArtistsPage.html">Artists</a></h1>
-        <h1 class="right"><a href="TopMusicPage.html">Music</a></h1>
-		<h1 class="right"><a href="ProductPage.html">Shop</a></h1>
-		<img src='LOGO/LNP (2).png' alt='Logo' class = 'pulsate' style='position: absolute; top: -15px; left: 0; width: 100px; height: auto;'>
-    </header>
-    <main>
-        <div id="countdowns">
-            <div class="countdown" id="coachella">
-                <h2>Coachella</h2>
-                <div class="timer" id="timer-coachella"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="trending, videos, music, artists, top content" />
+        <meta name="author" content="Jayden Heredia" />
+        <title>Festival Countdown</title>
+        <link rel="stylesheet" href="LateNightPicks.css" />
+    </head>
+    <body>
+        <header> <!-- Header Links -->
+            <h1 class="left"><a href="TopVideosPage.html">Videos</a></h1>
+            <h1 class="middle"><a href="TopArtistsPage.html">Artists</a></h1>
+            <h1 class="right"><a href="TopMusicPage.html">Music</a></h1>
+            <h1 class="right"><a href="ProductPage.html">Shop</a></h1>
+            <h1 class="right"><a href="index.html">Home</a></h1>
+            <img src="LOGO/LNP (2).png" alt="Logo" class="pulsate" style="position: absolute; top: -15px; left: 0; width: 100px; height: auto;" />
+        </header>
+        <main>
+		<!-- Festival countdown with hyperlink -->
+            <div id="countdowns">
+                <div class="countdown" id="coachella">
+                    <h3>Coachella</h3>
+                    <div class="timer" id="timer-coachella"></div>
+                    <a href="https://www.coachella.com/" id="link-coachella">Learn More</a>
+                </div>
+                <div class="countdown" id="edc">
+                    <h3>EDC</h3>
+                    <div class="timer" id="timer-edc"></div>
+                    <a href="https://lasvegas.electricdaisycarnival.com/" id="link-edc">Learn More</a>
+                </div>
+                <div class="countdown" id="beyond-chicago">
+                    <h3>Beyond Chicago</h3>
+                    <div class="timer" id="timer-beyond-chicago"></div>
+                    <a href="https://chicago.beyondwonderland.com/" id="link-beyond-chicago">Learn More</a>
+                </div>
+                <div class="countdown" id="electric-forest">
+                    <h3>Electric Forest</h3>
+                    <div class="timer" id="timer-electric-forest"></div>
+                    <a href="https://www.electricforest.com/" id="link-electric-forest">Learn More</a>
+                </div>
+                <div class="countdown" id="shambhala">
+                    <h3>Shambhala</h3>
+                    <div class="timer" id="timer-shambhala"></div>
+                    <a href="https://www.shambhalamusicfestival.com/" id="link-shambhala">Learn More</a>
+                </div>
+                <div class="countdown" id="arc-chicago">
+                    <h3>Arc Chicago</h3>
+                    <div class="timer" id="timer-arc-chicago"></div>
+                    <a href="https://arcmusicfestival.com/" id="link-arc-chicago">Learn More</a>
+                </div>
+                <div class="countdown" id="lost-lands">
+                    <h3>Lost Lands</h3>
+                    <div class="timer" id="timer-lost-lands"></div>
+                    <a href="https://www.lostlandsfestival.com/" id="link-lost-lands">Learn More</a>
+                </div>
+                <div class="countdown" id="no-limit tour">
+                    <h3>No-Limit Tour</h3>
+                    <div class="timer" id="timer-no-limit-tour"></div>
+                    <a href="https://nolimitmuzik.net/" id="link-no-limit-tour">Learn More</a>
+                </div>
             </div>
-            <div class="countdown" id="edc">
-                <h2>EDC</h2>
-                <div class="timer" id="timer-edc"></div>
-            </div>
-            <div class="countdown" id="beyond-chicago">
-                <h2>Beyond Chicago</h2>
-                <div class="timer" id="timer-beyond-chicago"></div>
-            </div>
-            <div class="countdown" id="electric-forest">
-                <h2>Electric Forest</h2>
-                <div class="timer" id="timer-electric-forest"></div>
-            </div>
-            <div class="countdown" id="shambhala">
-                <h2>Shambhala</h2>
-                <div class="timer" id="timer-shambhala"></div>
-            </div>
-            <div class="countdown" id="arc-chicago">
-                <h2>Arc Chicago</h2>
-                <div class="timer" id="timer-arc-chicago"></div>
-            </div>
-            <div class="countdown" id="lost-lands">
-                <h2>Lost Lands</h2>
-                <div class="timer" id="timer-lost-lands"></div>
-            </div>
-        </div>
-    </main>
-	    <footer>
-        <p>© 2024 All rights reserved.</p>
-    </footer>
+        </main>
+        <footer>
+	    <p>For any questions or concerns, contact: Jayheredia2005@gmail.com </p>
+            <p>© 2024 LateNightPicks. All rights reserved.</p>
+        </footer>
+	    	    <!-- Countdown Script -->
     <script>
         const festivals = [
             { id: 'coachella', date: new Date('April 11, 2025 00:00:00') },
@@ -57,7 +75,8 @@
             { id: 'electric-forest', date: new Date('June 19, 2025 00:00:00') },
             { id: 'shambhala', date: new Date('July 25, 2025 00:00:00') },
             { id: 'arc-chicago', date: new Date('August 29, 2025 00:00:00') },
-            { id: 'lost-lands', date: new Date('September 20, 2025 00:00:00') }
+            { id: 'lost-lands', date: new Date('September 20, 2025 00:00:00') },
+	    { id: 'no-limit-tour', date: new Date('Febuary 8, 2025 00:00:00') }
         ];
 
         function updateCountdowns() {
