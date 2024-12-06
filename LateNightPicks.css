@@ -426,7 +426,6 @@ img.pulsate {
 .audio-container {
     text-align: center;
     width: 30%;
-    margin-bottom: 20px;
 }
 
 .audio-image {
@@ -453,9 +452,4 @@ img.pulsate {
     width: 50% !important;
 }
 
-.text-container {
-    margin-top: 20px;
-    text-align: center;
-    padding-top: 100px;
-}
 
