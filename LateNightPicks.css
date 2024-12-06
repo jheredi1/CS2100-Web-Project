@@ -434,10 +434,5 @@ img.pulsate {
 }
 
 .audio-player {
-    width: 30%;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark text color */
-    border: 1px solid #ccc; /* Border around the player */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Internal padding */
+    width: 30%
 }
