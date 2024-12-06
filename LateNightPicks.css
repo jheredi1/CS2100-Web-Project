@@ -420,7 +420,7 @@ img.pulsate {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 500px;
+    padding-top: 250px;
 }
 
 .audio-container {
@@ -437,8 +437,6 @@ img.pulsate {
     font-size: 14px;
     color: gray;
     margin: 5
-
-
 
 .artist-image {
     width: 80%;
